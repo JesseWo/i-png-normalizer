@@ -1,0 +1,39 @@
+{
+  "name": "ipin",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JesseWo/ipin.git"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node ./demo/demo.js"
+  },
+  "version": "1.0.0",
+  "author": {
+    "name": "wangzhenxingvip@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/JesseWo/ipin/issues"
+  },
+  "dependencies": {
+    "crc": "^3.8.0"
+  },
+  "description": "iPhone PNG Image Normalizer.",
+  "directories": {},
+  "homepage": "https://github.com/JesseWo/ipin#readme",
+  "keywords": [
+    "Javascript",
+    "NodeJS",
+    ".ipa"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "email": "wangzhenxingvip@gmail.com",
+      "name": "Jessewo"
+    }
+  ]
+}
