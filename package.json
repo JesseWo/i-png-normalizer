@@ -1,5 +1,5 @@
 {
-  "name": "ipin",
+  "name": "i-png-normalizer",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JesseWo/ipin.git"
@@ -11,7 +11,7 @@
   "scripts": {
     "start": "node ./demo/demo.js"
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "wangzhenxingvip@gmail.com"
   },

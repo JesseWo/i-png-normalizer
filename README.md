@@ -15,27 +15,22 @@ npm start
 ```
 
 ## Usage
-在项目中直接通过以下方式进行依赖：
+依赖：
 
-package.json
 ```json
-...
-"dependencies": {
-    "ipin": "git+https://github.com/JesseWo/ipin.git",
-  },
-...
+npm i i-png-normalizer --save
 ```
 js
 ```javascript
 const fs = require('fs');
 const path = require('path');
 
-const IPngNormalizer = require('ipin');
-const srcBuf = fs.readFileSync(path.resolve(__dirname, './AppIcon57x57.png'))
+const IPngNormalizer = require('i-png-normalizer');
+const srcBuf = fs.readFileSync(path.resolve(__dirname, './input.png'))
 const ipin = new IPngNormalizer(srcBuf);
 const distBuf = ipin.parse();
 
-fs.writeFileSync(path.resolve(__dirname, './ipin.png'), distBuf);
+fs.writeFileSync(path.resolve(__dirname, './output.png'), distBuf);
 ```
 
 ## Refs.
