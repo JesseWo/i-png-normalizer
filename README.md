@@ -1,7 +1,7 @@
-# IPIN
+# i-png-normalizer
 Apple 对 png 图片进行了 [pngcrush](https://pmt.sourceforge.io/pngcrush/) 压缩, 此格式的图片在非 Apple 的软件内无法正常显示. 其中典型的场景就是从 `.ipa` 文件中提取的 icon 在除了 Safari 之外的浏览器上无法正常显示.
 
-**IPIN (iPhone PNG Image Normalizer)** 的作用就是将这种 PNG 图片进行转换, 以实现在各种图片解析软件中正常显示.
+**i-png-normalizer (iPhone PNG Image Normalizer)** 的作用就是将这种 PNG 图片进行转换, 以实现在各种图片解析软件中正常显示.
 > Apple 压缩优化后的 PNG 与 常规的 PNG 在数据格式方面的区别可参见 [CgBI_file_format](http://iphonedevwiki.net/index.php/CgBI_file_format)
 
 node中现有的解决方案是 [node-pngdefry](https://github.com/forsigner/node-pngdefry), 是通过对 [pngdefry (C)](http://www.jongware.com/pngdefry.html) CLI工具的封装实现的. 
