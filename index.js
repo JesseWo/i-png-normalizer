@@ -3,6 +3,6 @@
  * -----
  */
 
-const CgBICleaner = require('./lib/CgBICleaner');
+const IPngNormalizer = require('./lib/IPngNormalizer');
 
-module.exports = CgBICleaner;
+module.exports = IPngNormalizer;

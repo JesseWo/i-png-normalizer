@@ -8,6 +8,12 @@ node中现有的解决方案是 [node-pngdefry](https://github.com/forsigner/nod
 
 相对于以上解决方案, IPIN 的优势在于输入和输出都是 `buffer`, 直接在内存中从二进制层面对 PNG 数据进行转换, 从而减少无关的 I/O 操作.
 
+## Test
+```
+npm i
+npm start
+```
+
 ## Usage
 在项目中直接通过以下方式进行依赖：
 
@@ -24,16 +30,16 @@ js
 const fs = require('fs');
 const path = require('path');
 
-const CgBICleaner = require('ipin');
+const IPngNormalizer = require('ipin');
 const srcBuf = fs.readFileSync(path.resolve(__dirname, './AppIcon57x57.png'))
-const ipin = new CgBICleaner(srcBuf);
+const ipin = new IPngNormalizer(srcBuf);
 const distBuf = ipin.parse();
 
 fs.writeFileSync(path.resolve(__dirname, './ipin.png'), distBuf);
 ```
 
 ## Refs.
-### Format
+### Specification
 - [REC-PNG-20031110](https://www.w3.org/TR/2003/REC-PNG-20031110/)
 - [PNG-Structure](http://www.libpng.org/pub/png/spec/1.0/PNG-Structure.html)
 - [CgBI_file_format](http://iphonedevwiki.net/index.php/CgBI_file_format)
@@ -41,7 +47,12 @@ fs.writeFileSync(path.resolve(__dirname, './ipin.png'), distBuf);
 - Encoding
   - [pincrush (C)](https://github.com/DHowett/pincrush)
 - Decoding
-  - [pngdefry (C)](http://www.jongware.com/pngdefry.html)
+  - [pngdefry (C)](http://www.jongware.com/pngdefry.html) (更加健壮的完整实现)
   - [node-pngdefry (node.js wrapper of pngdefry)](https://github.com/forsigner/node-pngdefry)
-  - [iPhone PNG Image Normalizer (python)](https://axelbrz.com/?mod=iphone-png-images-normalizer)
+  - [iPhone PNG Image Normalizer (python)](https://axelbrz.com/?mod=iphone-png-images-normalizer), 有BUG, 具体如下:
+    > A Python script by Axel E. Brzostowski (http://www.axelbrz.com.ar/) that removes the CgBI chunk, decompresses IDAT chunks, reverses color order, and recompresses them. It cannot handle multiple IDAT chunks, does not work with Adam7 interlaced images, and does not fix pre-multiplied alpha. 
 
+  - [png.js](https://github.com/TencentWSRD/png.js)
+
+## License
+MIT
