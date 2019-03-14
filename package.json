@@ -2,7 +2,7 @@
   "name": "i-png-normalizer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JesseWo/ipin.git"
+    "url": "git+https://github.com/JesseWo/i-png-normalizer.git"
   },
   "files": [
     "index.js",
@@ -16,14 +16,14 @@
     "name": "wangzhenxingvip@gmail.com"
   },
   "bugs": {
-    "url": "https://github.com/JesseWo/ipin/issues"
+    "url": "https://github.com/JesseWo/i-png-normalizer/issues"
   },
   "dependencies": {
     "crc": "^3.8.0"
   },
   "description": "iPhone PNG Image Normalizer.",
   "directories": {},
-  "homepage": "https://github.com/JesseWo/ipin#readme",
+  "homepage": "https://github.com/JesseWo/i-png-normalizer#readme",
   "keywords": [
     "Javascript",
     "NodeJS",
@@ -33,7 +33,7 @@
   "maintainers": [
     {
       "email": "wangzhenxingvip@gmail.com",
-      "name": "Jessewo"
+      "name": "Jessewoo"
     }
   ]
 }
